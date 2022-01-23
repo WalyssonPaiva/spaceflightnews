@@ -5,7 +5,7 @@ class Event(BaseModel):
     id: str
     provider: str
 class Article(BaseModel):
-    id: int
+    id: Optional[int] = None
     featured: bool
     provider: str
     title: str
