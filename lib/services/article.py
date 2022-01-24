@@ -15,7 +15,7 @@ async def create_article(article: Article):
     return article
 
 @router.get("/")
-async def get_articles(page: int, per_page: int):
+async def get_articles(page: int = 1, per_page: int = 1):
     return article_db.get_articles(page, per_page)
 
 @router.get("/{id}")
