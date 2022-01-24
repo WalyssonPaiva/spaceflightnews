@@ -1,6 +1,6 @@
 from fastapi import Depends, FastAPI, HTTPException
-from services import article as s_article
-import update_db_cron
+from .services import article as s_article
+from . import update_db_cron
 from apscheduler.schedulers.background import BackgroundScheduler
 
 app = FastAPI()
@@ -14,7 +14,7 @@ async def root():
 @app.on_event('startup')
 def init_data():
     scheduler = BackgroundScheduler()
-    scheduler.add_job(update_db_cron.update_db, 'cron', hour=12, minute=55, second=0)
+    scheduler.add_job(update_db_cron.update_db, 'cron', hour=19, minute=34, second=0)
     scheduler.start()
 
 

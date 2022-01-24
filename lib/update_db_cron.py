@@ -1,5 +1,5 @@
 import requests
-from database import article
+from .database import article
 
 def update_db():
     elements = []

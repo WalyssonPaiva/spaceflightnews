@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from database import article as article_db
-from models.article import Article
+from ..database import article as article_db
+from ..models.article import Article
 
 router = APIRouter(
     prefix="/articles",
