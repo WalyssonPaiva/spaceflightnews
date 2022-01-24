@@ -48,7 +48,7 @@ Clone este repositório:
 $ git clone https://github.com/WalyssonPaiva/spaceflightnews
 $ cd spaceflightnews
 
-Preenchendo o Banco com os artigos atuais:
+Preenchendo o Banco com os artigos atuais (a partir daqui, é preciso que já tenha configurado o .env):
 
 $ python -m venv venv
 $ source venv/bin/activate
