@@ -11,7 +11,7 @@ def get_latest():
 
 def get_next_id():
     last = get_latest()
-    if last.length == 0:
+    if last== None:
         return 1
     return last[0]['id'] + 1
 
@@ -43,3 +43,11 @@ def delete_article(id):
 def insert_many(articles):
     collection = connection.get_collection('articles')
     collection.insert_many(articles)
+
+def get_by_title(title):
+    collection = connection.get_collection('articles')
+    item = collection.find_one({"title": title})
+    if item:
+        del item["_id"]
+        return item
+    return None
