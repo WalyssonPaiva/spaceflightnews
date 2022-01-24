@@ -8,10 +8,6 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 COPY . .
-RUN chmod +x run
-
-FROM base as test 
-RUN ["./run", "tests"]
 
 FROM base as development
 EXPOSE 8000
