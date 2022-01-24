@@ -3,10 +3,10 @@
 </h1>
 <p align="center">
    <a>
-    <img alt="Python^^" src="https://img.shields.io/github/languages/top/WalyssonPaiva/spaceflightnews">
+    <img alt="Python" src="https://img.shields.io/github/languages/top/WalyssonPaiva/spaceflightnews">
   </a>
 
-  <img alt="Repo size" src="https://img.shields.io/github/repo-size/WalyssonPaiva/spaceflightnews">
+  <img alt="Repository Size" src="https://img.shields.io/github/repo-size/WalyssonPaiva/spaceflightnews">
 	
 <a target="_blank" href="https://www.linkedin.com/in/walyssonpaiva">
     <img alt="Made by WalyssonPaiva" src="https://img.shields.io/badge/Made%20By-WalyssonPaiva-brightgreen">
