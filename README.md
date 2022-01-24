@@ -17,7 +17,7 @@
   </a>
 
  
-  <img alt="Stars <3" src="https://img.shields.io/github/stars/WalyssonPaiva/spaceflightnews?style=social">
+  <img alt="Stars total <3" src="https://img.shields.io/github/stars/WalyssonPaiva/spaceflightnews?style=social">
 </p>
 <h1>
   :clipboard: Projeto:
