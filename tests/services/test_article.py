@@ -23,7 +23,6 @@ def test_get_articles(monkeypatch):
 def test_get_article(monkeypatch):
     monkeypatch.setenv('COLLECTION', 'test_collection', prepend=False)
     article = create_article_db()
-    print(article)
     response = client.get(f"/articles/{article['id']}")
     assert response.status_code == 200
     assert response.json() == article
