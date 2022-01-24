@@ -39,3 +39,7 @@ def delete_article(id):
     collection = connection.get_collection('articles')
     collection.delete_one({"id": id})
     return id
+
+def insert_many(articles):
+    collection = connection.get_collection('articles')
+    collection.insert_many(articles)
