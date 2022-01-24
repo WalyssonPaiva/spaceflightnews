@@ -1,3 +1,4 @@
+import datetime
 from . import connection
 from decouple import config
 
@@ -39,6 +40,7 @@ def get_article(id):
 
 def update_article(id, article):
     collection = connection.get_collection(config('COLLECTION'))
+    article['updatedAt'] = datetime.datetime.utcnow()
     collection.update_one({"id": id}, {"$set": article})
     return article
 
